@@ -9,7 +9,7 @@ export class CurrencyService {
         }else {
           reject(request.response);
         }
-      }
+      };
       request.open("GET", url, true);
       request.send();
     });
