@@ -6,12 +6,14 @@ import CurrencyService from './js/currency-service.js'
 
 $(document).ready(function() {
   $("#exchange").click(function() {
-    let inputAmount = $("#usd").val();
+    let inputAmount = parseFloat(($("#usd").val()));
     let inputCurrency = $("#currencyT").val();
-    let promise = CurrencyService.getExchange(inputCurrency, inputAmount);
+    let promise = CurrencyService.getExchange(inputAmount, inputCurrency);
     promise.then(function(response) {
-      let body = JSON.parse(response);
-      $("#showConversion").text(`${body.conversion_result}`);
+      if(response) {
+      const body = JSON.parse(response);
+      $("#showConversion").html(`${body.conversion_result}`);
+      }
     })
   })
 })
