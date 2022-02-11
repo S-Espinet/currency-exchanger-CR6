@@ -16,10 +16,8 @@ console.log(inputCurrency);
 console.log(inputAmount);
 console.log(inputCurrency);
     promise.then(function(response) {
-      if(response) {
-      const body = JSON.parse(response);
-      $("#showConversion").html(`${body.conversion_result}`);
-      }
+      let body = JSON.parse(response);
+      $("#currencyAmount").text(`${parseFloat(body.conversion_result).toFixed(2)}`)
     })
   })
 })
