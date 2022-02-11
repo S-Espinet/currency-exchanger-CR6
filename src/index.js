@@ -9,15 +9,13 @@ import { CurrencyService } from './js/currency-service.js';
 $(document).ready(function() {
   $("#exchange").click(function() {
     let inputAmount = parseFloat(($("#dollarAmount").val()));
-console.log(inputAmount);
     let inputCurrency = $("#currencyT").val();
-console.log(inputCurrency);
     let promise = CurrencyService.getExchange(inputCurrency, inputAmount);
-console.log(inputAmount);
-console.log(inputCurrency);
     promise.then(function(response) {
       let body = JSON.parse(response);
-      $("#currencyAmount").text(`${parseFloat(body.conversion_result).toFixed(2)}`)
-    })
-  })
-})
+      $("#currencyAmount").text(`${body.conversion_result.toFixed(2)}`);
+    },function(error) {
+      $("#showErrors").text(`There was an error processing your request: ${error}`);
+    });
+  });
+});
