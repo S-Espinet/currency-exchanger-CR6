@@ -12,8 +12,13 @@
       </form>
       <form id="currencyform">
         <h2>Choose a Currency: </h2>
-          <label for="currencyT">Currency: </label>
-          <input id="currencyT" class="form-control" type="text">
+        <select class="form-control" id="currencies">
+          <option value="FJD">Fiji Dollar - Fiji - FJD</option>
+          <option value="DKK">Danish Krone - Denmark - DKK</option>
+          <option value="EUR">Euro - European Union - EUR</option>
+          <option value="JPY">Japanese Yen - Japan - JPY</option>
+          <option value="SAR">Saudi Riyal - SaudiArabia - SAR</option>
+        </select>
           <button type="button" class="btn-dark" id="exchange">Show Me the Money!</button>
       </form>
       <div id="showConversion">

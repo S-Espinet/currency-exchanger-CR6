@@ -9,7 +9,7 @@ import { CurrencyService } from './js/currency-service.js';
 $(document).ready(function() {
   $("#exchange").click(function() {
     let inputAmount = parseFloat(($("#dollarAmount").val()));
-    let inputCurrency = $("#currencyT").val();
+    let inputCurrency = $("#currencies").val();
     if(isNaN(inputAmount) === true) {
       $("#showErrors").text("Please enter a valid number.");
     }
