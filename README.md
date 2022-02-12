@@ -36,7 +36,7 @@ _This is a webpage that allows a user to input an amount in USD to receive an eq
 * _create .env file in the top level of your directory and store your API key in it; the .env file should be stored in your .gitignore file_
 * _navigate to top level of directory in terminal -or- in your GUI_
 * _type "open index.html" into terminal, -or- double-click the index.html file in your GUI, -or- type "npm run start" terminal_
-* _enter a number into the field provided and select a currency_
+* _enter a number and a currency into the fields provided_
 * _click the `Show Me the Money` button to see your conversion into your chosen currency_
 
 ## Known Bugs
