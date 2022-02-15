@@ -4,8 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import { CurrencyService } from './js/currency-service.js';
 
-// function converter(body, )
-
 $(document).ready(function() {
   $("#exchange").click(function() {
     let inputAmount = parseFloat(($("#dollarAmount").val()));
@@ -35,9 +33,3 @@ $(document).ready(function() {
     }
   });
 });
-
-
-
-          // if(inputCurrency !== "FJD" && inputCurrency !== "DKK" && inputCurrency !== "EUR" && inputCurrency !== "JPY" && inputCurrency !== "SAR") {
-          //   $("#showErrors").text("Currency not supported/currency doesn't exist. Please enter a valid currency.");
-          // }
