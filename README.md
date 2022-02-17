@@ -29,11 +29,13 @@ _This is a webpage that allows a user to input an amount in USD to receive an eq
 * _navigate to https://www.exchangerate-api.com/ and input your email address and click the `Get Free Key` button to get an API key_
 * _create account, following prompts_
 * _navigate to github.com/S-Espinet in browser_
-* _select repository (pizza-parlor-cr4)_
+* _select repository (currency-exchanger-CR6)_
 * _click `Code` button and select desired security protocol_
 * _run git clone in terminal into desired directory_
 * _run "npm install" in terminal_
-* _create .env file in the top level of your directory and store your API key in it; the .env file should be stored in your .gitignore file_
+* _create .env file in the top level of your directory and store your API key in it_  
+_- use the following format for storing your API key: API\_KEY={YOUR-API-KEY}_  
+_- the .env file should be stored in your .gitignore file``_
 * _navigate to top level of directory in terminal -or- in your GUI_
 * _type "open index.html" into terminal, -or- double-click the index.html file in your GUI, -or- type "npm run start" terminal_
 * _enter a number and a currency into the fields provided_
